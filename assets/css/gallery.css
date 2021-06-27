@@ -1,0 +1,135 @@
+body{
+   background-color: #ddd;
+   overflow-x: hidden;
+}
+
+#main {
+    margin-top: 120px;
+    margin-bottom: 30px;
+   
+}
+
+.gallery_column {
+    width: 23%;
+    margin:1%;
+}
+
+.gallery_nav {
+  display: flex;
+  justify-content :center;
+}
+
+.gallery_nav_btn {
+  margin: 5px;
+  background-color: rgba(128, 128, 128, 0.199);
+}
+
+.gallery_nav_btn:hover, .gallery_nav_btn:active, .gallery_nav_btn:focus {
+  color: #fff!important;
+  background-color: #F76900;
+}
+
+.gallery_nav .active{
+  color: #fff!important;
+  background-color: #F76900;
+}
+/* Style the images inside the grid */
+.gallery_column img {
+  cursor: pointer;
+  transition :0.2s transform;
+}
+
+.gallery_column img:hover {
+  opacity: 1;
+  transform:scale(1.1);
+
+}
+
+/* Clear floats after the columns */
+.gallery_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.gallery_container {
+  position: relative;
+  display: none;
+  margin-bottom: 20px;
+}
+
+#expandedImg {
+    width: 700px;
+    height: 500px;
+    margin-left: 20%;
+}
+
+.gallery_column img{
+    height:250px;
+    width:100%;
+}
+
+/* Expanding image text */
+#imgtext {
+  background-color: #f76b007a;
+  position: absolute;
+  bottom: 15px;
+  font-weight: bold;
+  left: 250px;
+  color: White;
+  font-size: 20px;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 0px;
+  right: 215px;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+    .gallery_container {
+      padding-left:5% !important;
+    }
+
+    .gallery_column {
+      width: 80%;
+      margin:2% 10%;
+    }
+
+    .gallery_nav {
+      flex-direction: column;
+      margin: 0px 25%;
+    }
+
+    .gallery_column img{
+      height:200px;
+    }
+
+    #expandedImg {
+      width: 280px;
+      height: 400px;
+      margin-left: 5%;
+      }
+
+      #imgtext {
+      bottom: 15px;
+      left: 120px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 992px) {
+ 
+}
