@@ -29,10 +29,10 @@
   
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.gallery_column').fadeIn('slow');
+      $('.foot-link').fadeIn('slow');
     }
   });
-  $('.gallery_column').click(function() {
+  $('.foot-link').click(function() {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
